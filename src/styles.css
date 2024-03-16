@@ -109,3 +109,38 @@
   font-weight: 900;
   font-style: italic;
 }
+
+/* ///////////////////////////////////////////// custome classes  for  taiwlind style/////////////////////*/
+
+/* Define a class for the container */
+.container {
+  /* Set maximum width */
+  max-width: 1140px; /* You can adjust this value based on your design */
+
+  /* Center the container horizontally */
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Add padding */
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  /* Clearfix to contain floated elements */
+  overflow: hidden;
+}
+
+/* Apply responsive padding to the container */
+@media (min-width: 640px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Apply larger padding for larger screens */
+@media (min-width: 768px) {
+  .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
