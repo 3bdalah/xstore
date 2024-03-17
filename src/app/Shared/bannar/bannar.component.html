@@ -1,1 +1,21 @@
-<p>bannar works!</p>
+<section class="bannar-img-bg">
+  <div class="overlay"></div>
+  <div
+    class="container flex flex-row content-center items-center h-full w-full"
+  >
+    <div class="flex flex-row content-center items-center h-auto w-auto">
+      <i class="fa fa-house text-gray-200 mr-4"></i>
+      @for (item of path; track $index) {
+      <i class="text-gray-200 fa fa-angle-right"></i>
+      <p
+        class="mx-3  capitalize {{
+          $index == length ? 'text-green-600' : 'text-gray-200'
+        }}"
+      >
+        {{ item }}
+      </p>
+
+      }
+    </div>
+  </div>
+</section>
